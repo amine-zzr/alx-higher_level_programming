@@ -1,5 +1,12 @@
 #include "lists.h"
 
+/**
+ * reverse_list - Reverses a linked list.
+ * @head: A pointer to the head of the linked list.
+ *
+ * Return: A pointer to the new head of the reversed list.
+ */
+
 listint_t *reverse_list(listint_t *head)
 {
 	listint_t *prev = NULL;
@@ -17,6 +24,12 @@ listint_t *reverse_list(listint_t *head)
 	return (prev);
 }
 
+/**
+ * is_palindrome - Checks if a linked list is a palindrome.
+ * @head: A pointer to the head of the linked list.
+ *
+ * Return: 1 if the linked list is a palindrome, 0 otherwise.
+ */
 
 int is_palindrome(listint_t **head)
 {
