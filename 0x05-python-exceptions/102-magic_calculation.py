@@ -14,3 +14,4 @@ def magic_calculation(a, b):
             result += (a ** b) / i
 
     result += b + a
+    return result
