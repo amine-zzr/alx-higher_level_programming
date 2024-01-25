@@ -5,6 +5,13 @@ class Square:
     """
     This class represents a square.
 
-    """
+    Attributes:
+    No attributes are defined yet for this empty class.
 
-    pass
+    """
+    def __init__(self):
+        """
+        This is the constructor method for the Square class.
+        No parameters are required for now as the class is empty.
+        """
+        pass
