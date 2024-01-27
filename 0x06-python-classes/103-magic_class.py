@@ -11,7 +11,7 @@ import math
 
 
 class MagicClass:
-    def __init__(self, radius):
+    def __init__(self, radius=0):
         """
         Constructor method for MagicClass.
 
