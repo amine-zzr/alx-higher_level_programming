@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 """
 Module: magic_class
 
@@ -11,14 +9,14 @@ import math
 
 
 class MagicClass:
-    def __init__(self, radius=0):
+    def __init__(self, radius):
         """
         Constructor method for MagicClass.
 
         Parameters:
         - radius (int or float): The radius of the circle.
         """
-        if not isinstance(radius, (int, float)):
+        if type(radius) is not int or type(radius) is not float:
             raise TypeError('radius must be a number')
 
         self.__radius = radius
