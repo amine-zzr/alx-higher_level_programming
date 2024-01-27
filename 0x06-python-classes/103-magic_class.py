@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
 MagicClass Module
-This module defines the MagicClass class, which represents a circle and provides
+This module defines the MagicClass class, which represents
+    a circle and provides
     methods to calculate its area and circumference.
 """
 
