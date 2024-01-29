@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 """
+Module: integer_adder
+
 This module provides a function for adding two integers.
+
+Functions:
+    add_integer(a, b=98): Adds two integers and returns the result.
 """
 
 

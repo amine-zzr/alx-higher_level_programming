@@ -1,0 +1,38 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+# Test Case 1
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+# Test Case 2
+>>> say_my_name("Walter", "White")
+My name is Walter White
+
+# Test Case 3
+>>> say_my_name("Bob")
+My name is Bob 
+
+# Test Case 4
+>>> try:
+...     say_my_name(12, "White")
+... except Exception as e:
+...     print(e)
+first_name must be a string
+
+# Test Case 6
+>>> try:
+...     say_my_name("", "Johnson")
+... except Exception as e:
+...     print(e)
+My name is  Johnson
+
+# Test Case 7
+>>> try:
+...     say_my_name(None, "Doe")
+... except Exception as e:
+...     print(e)
+first_name must be a string
+
+# Test Case 8
+>>> say_my_name("", "")
+My name is  
