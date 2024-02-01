@@ -2,7 +2,8 @@
 """
 This module defines a Rectangle classh with private attributes
     width and height and public methods area, perimeter, __str__,
-    __repr__ and __del__ and a public class attribute number_of_instances.
+    __repr__ and __del__ and a public class attribute number_of_instances
+    and print_symbol.
 """
 
 
