@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+defines a function that returns a list of an object methods and objects.
+"""
+
 
 def lookup(obj):
     """
