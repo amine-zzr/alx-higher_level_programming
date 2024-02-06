@@ -65,6 +65,11 @@ integer_validator method string value:
     Traceback (most recent call last):
     TypeError: Bar must be an integer
 
+integer_validator method bool value:
+    >>> bg.integer_validator("zar", True)
+    Traceback (most recent call last):
+    TypeError: zar must be an integer
+
 integer_validator method list value:
     >>> bg.integer_validator("a", [1])
     Traceback (most recent call last):
