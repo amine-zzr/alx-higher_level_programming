@@ -20,7 +20,7 @@ class BaseGeometry:
         Public instance method that validates the value to be
         an integer greater than 0.
         """
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
 
         if value <= 0:
