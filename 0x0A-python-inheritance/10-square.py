@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 '''
+This Module intializes the Square class.
 '''
 
 Rectangle = __import__('9-rectangle').Rectangle
