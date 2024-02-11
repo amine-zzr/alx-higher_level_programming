@@ -49,3 +49,10 @@ class Square(Rectangle):
         else:
             for key, value in kwargs.items():
                 super().update(**kwargs)
+
+    def to_dictionary(self):
+        '''
+        '''
+
+        return {'id': self.id, 'x': self.x,
+                'size': self.size, 'y': self.y}
