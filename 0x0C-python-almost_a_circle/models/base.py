@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+import csv
 import json
 
 '''
@@ -108,3 +109,39 @@ class Base:
                     return []
         except FileNotFoundError:
             return []
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        ''' '''
+
+        filename = cls.__name__ + '.csv'
+        with open(filename, 'w', newline='') as file:
+            writer = csv.writer(file)
+            for obj in list_objs:
+                if cls.__name__ == 'Rectangle':
+                    writer.writerow(
+                            [obj.id, obj.width, obj.height, obj.x, obj.y])
+                elif cls.__name__ == 'Square':
+                    writer.writerow(
+                            [obj.id, obj.size, obj.x, obj.y])
+
+    @classmethod
+    def load_from_file_csv(cls):
+        '''
+        '''
+
+        filename = cls.__name__ + '.csv'
+        objects = []
+        try:
+            with open(filename, 'r', newline='') as file:
+                reader = csv.reader(file)
+                for row in reader:
+                    if cls.__name__ == 'Rectangle':
+                        obj = cls(*map(int, row[1:]), id=int(row[0]))
+                    elif cls.__name__ == 'Square':
+                        obj = cls(*map(int, row[1:]), id=int(row[0]))
+                    objects.append(obj)
+        except FileNotFoundError:
+            pass
+
+        return objects
