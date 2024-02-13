@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
-import csv
-import json
-
 '''
 This Module initializes a class Base as the base class of all other classes.
 '''
+
+import csv
+import json
 
 
 class Base:
