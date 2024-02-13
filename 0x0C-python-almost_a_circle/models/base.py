@@ -112,7 +112,9 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
-        ''' '''
+        '''
+        Write the CSV serialization of a list of objects to a file.
+        '''
 
         filename = cls.__name__ + '.csv'
         with open(filename, 'w', newline='') as file:
@@ -128,6 +130,7 @@ class Base:
     @classmethod
     def load_from_file_csv(cls):
         '''
+        Return a list of classes instantiated from a CSV file.
         '''
 
         filename = cls.__name__ + '.csv'
