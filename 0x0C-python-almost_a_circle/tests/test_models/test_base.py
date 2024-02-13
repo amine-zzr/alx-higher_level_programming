@@ -30,5 +30,6 @@ class TestBase(unittest.TestCase):
         obj_list = Base.from_json_string(json_string)
         self.assertEqual(obj_list, [])
 
+
 if __name__ == '__main__':
     unittest.main()
