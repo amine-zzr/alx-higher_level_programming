@@ -2,11 +2,10 @@
 
 class Rectangle {
   constructor (w, h) {
-    if (w <= 0 || h <= 0 || isNaN(w) || isNaN(h)) {
-      return {};
+    if (w > 0 && h > 0 && !isNaN(h) && !isNaN(w)) {
+      this.width = w;
+      this.height = h;
     }
-    this.width = w;
-    this.height = h;
   }
 }
 
