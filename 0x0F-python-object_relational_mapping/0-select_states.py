@@ -11,10 +11,10 @@ if __name__ == "__main__":
     mysql_db = sys.argv[3]
 
     db = MySQLdb.connect(host='localhost', port=3306, user=mysql_user,
-            passwd=mysql_password, db=mysql_db)
+                         passwd=mysql_password, db=mysql_db)
     cursor = db.cursor()
 
-    cursot.execute("SELECT * FROM states ORDER BY id ASC")
+    cursor.execute("SELECT * FROM states ORDER BY id ASC")
     states = cursor.fetchall()
 
     for state in states:
