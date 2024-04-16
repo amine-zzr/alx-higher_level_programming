@@ -29,6 +29,7 @@ if __name__ == "__main__":
     cursor.execute(query, (state_name,))
     cities = cursor.fetchall()
 
-    print(cities[0][0])
+    if cities:
+        print(cities[0][0])
 
     db.close()
