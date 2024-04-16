@@ -27,10 +27,10 @@ if __name__ == "__main__":
             ORDER BY cities.id ASC
             """
     cursor.execute(query, (state_name,))
-    cities = cursor.fetchall()
+    cities = cursor.fetchone()
 
-    if cities and cities[0][0] is not None:
-        print(cities[0][0])
+    if cities and cities[0] is not None:
+        print(cities[0])
     else:
         print()
 
