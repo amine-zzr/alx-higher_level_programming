@@ -10,8 +10,8 @@ request(apiUrl, (err, response, body) => {
     return;
   }
   const data = JSON.parse(body);
-  const WithWedgeAntilles = data.results.filter(movie =>
+  const WedgeAntilles = data.results.filter(movie =>
     movie.characters.includes(`https://swapi-api.alx-tools.com/api/people/${characterId}/`)
   );
-  console.log(WithWedgeAntilles.length);
+  console.log(WedgeAntilles.length);
 });
