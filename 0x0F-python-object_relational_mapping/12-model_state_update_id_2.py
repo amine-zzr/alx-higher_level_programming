@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""adding the State object “Louisiana” to a database
+"""changing the name of a State object from a database
 """
 
 import sys
