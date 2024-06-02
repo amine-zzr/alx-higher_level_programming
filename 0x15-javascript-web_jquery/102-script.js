@@ -3,7 +3,7 @@ $(document).ready(function() {
     let languageCode = $('#language_code').val();
 
     $.ajax({
-      url: 'https://www.fourtonfish.com/hellosalut/hello/',
+      url: 'https://hellosalut.stefanbohacek.dev/',
       type: 'GET',
       dataType: 'json',
       data: { lang: languageCode },
